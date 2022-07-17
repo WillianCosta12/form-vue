@@ -1,26 +1,41 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="App">
+    <TabForm/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TabForm from './components/Tab-Form.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+
+
+  export default {
+    components: {
+    TabForm
+},
+    data() {
+      return {
+      }
+    },
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+  * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 10;
 }
+
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+
+
+/* Tab Navigation */
 </style>
